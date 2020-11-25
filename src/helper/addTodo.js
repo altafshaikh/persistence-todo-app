@@ -15,5 +15,5 @@ export const addTodo = (text) => {
   );
 
   //render the task on html dom
-  document.getElementById("todoList").appendChild(taskMarkup);
+  document.getElementById("todo-list").appendChild(taskMarkup);
 };
