@@ -11,6 +11,7 @@ import { renderTodo } from "./helper/renderTodo.js";
 window.onload = () => {
   document.forms.taskList.addEventListener("submit", formSubmission);
   document.getElementById("todo-list").addEventListener("click", deleteCheck);
+  document.getElementById("todo-filter").addEventListener("change", filterTodo);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
