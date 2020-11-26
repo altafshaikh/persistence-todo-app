@@ -7,6 +7,7 @@ import { formSubmission } from "./helper/formSubmission.js";
 import { deleteCheck } from "./helper/deleteCheck.js";
 import { storeTodo, getStoredTodo } from "./taskData.js";
 import { renderTodo } from "./helper/renderTodo.js";
+import { filterTodo } from "./helper/filterTodo.js";
 
 window.onload = () => {
   document.forms.taskList.addEventListener("submit", formSubmission);

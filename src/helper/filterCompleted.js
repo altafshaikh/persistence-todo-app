@@ -6,5 +6,8 @@ export const filterCompleted = () => {
   const completedTodos = todos.filter((todo) => {
     return todo.completed == true;
   });
-  renderTodo(completedTodos);
+  document.getElementById("todo-list").textContent = "";
+  completedTodos.forEach((todo) => {
+    renderTodo(todo);
+  });
 };
