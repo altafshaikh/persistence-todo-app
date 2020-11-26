@@ -1,7 +1,7 @@
-import { addTodo } from "./addTodo.js";
+import { createTodo } from "./createTodo.js";
 export const formSubmission = (event) => {
   //prevent form refresh
   event.preventDefault();
-  addTodo(event.target.textInput.value);
+  createTodo(event.target.textInput.value);
   event.target.textInput.value = "";
 };

@@ -1,11 +1,12 @@
-import { TodoItems, storeTodo } from "../taskData.js";
+import { storeTodo, getStoredTodo } from "../taskData.js";
 
 export const deleteTodoStorage = (id) => {
-  const updatedTodoList = TodoItems.splice(
-    TodoItems.findIndex((todo) => {
-      return todo.taskID == id;
-    }),
-    1
-  );
-  storeTodo(updatedTodoList);
+  const todos = getStoredTodo();
+  const todoIndex = todos.findIndex((todo) => {
+    return todo.taskID == id;
+  });
+
+  todos.splice(todoIndex, 1);
+
+  storeTodo(todos);
 };
