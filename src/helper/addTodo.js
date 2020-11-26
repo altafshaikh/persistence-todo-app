@@ -14,7 +14,5 @@ export const addTodo = (text) => {
     TodoItems.push(taskObj);
     //render the task on html dom
     document.getElementById("todo-list").appendChild(taskMarkup);
-  } else {
-    console.log("invalid input");
   }
 };
