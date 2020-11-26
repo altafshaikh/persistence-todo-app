@@ -2,7 +2,9 @@ export const Task = (taskObj) => {
   const div = document.createElement("div");
   div.classList.add("todo");
   div.id = taskObj.taskID;
-
+  if (taskObj.completed) {
+    div.classList.add("completed");
+  }
   const li = document.createElement("li");
   li.classList.add("todo-item");
   li.textContent = taskObj.description;
