@@ -24,6 +24,10 @@ body {
   margin: 0;
 }
 
+main {
+  height: 100vh;
+}
+
 .headiing {
   text-align: center;
 }
@@ -152,6 +156,31 @@ select {
   color: #ff6f47;
 }
 
+footer {
+  background-color: transparent;
+  color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+footer .social-links a:hover {
+  color: #2f9ee5;
+}
+
+footer .copy span {
+  color: #2f9ee5;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .navigation {
@@ -169,6 +198,9 @@ select {
   }
   .todo {
     font-size: 4vw !important;
+  }
+  footer {
+    flex-direction: column;
   }
 }
 

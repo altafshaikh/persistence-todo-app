@@ -30,30 +30,38 @@
         </div>
       </nav>
     </header>
-    <div class="headiing">
-      <h1>Altaf's Todo List</h1>
-    </div>
-    <form action="" name="taskList">
-      <input class="todo-input" type="text" name="text" id="textInput" />
-      <button class="todo-button" type="submit">
-        <i class="fa fa-plus-square"></i>
-      </button>
-      <div class="select">
-        <select name="todos" id="todo-filter" class="filter-todo">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="uncompleted">Uncompleted</option>
-        </select>
+    <main>
+      <div class="headiing">
+        <h1>Altaf's Todo List</h1>
       </div>
-    </form>
-    <div class="todo-container">
-      <ul id="todo-list">
-        <!-- <div class="todo">
-          <li id=""></li>
-          <button>Delete</button>
-          <button>Completed</button>
-        </div> -->
-      </ul>
-    </div>
+      <form action="" name="taskList">
+        <input class="todo-input" type="text" name="text" id="textInput" />
+        <button class="todo-button" type="submit">
+          <i class="fa fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select name="todos" id="todo-filter" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+      <div class="todo-container">
+        <ul id="todo-list"></ul>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copy">
+        &copy; 2020 All Rights Reserved by <span>Altaf Shaikh</span>
+      </p>
+      <div class="social-links">
+        <a href="#" class="fa fa-twitter twitter"></a>
+        <a href="#" class="fa fa-linkedin linkedin"></a>
+        <a href="#" class="fa fa-facebook facebook"></a>
+        <a href="#" class="fa fa-github github"></a>
+      </div>
+    </footer>
   </body>
 </html>
