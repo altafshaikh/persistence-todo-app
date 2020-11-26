@@ -1,6 +1,6 @@
 import { taskConstructor } from "./taskConstructor.js";
 import { Task } from "../components/task.js";
-import { TodoItems } from "../taskData.js";
+import { TodoItems, storeTodo } from "../taskData.js";
 import { inputValidation } from "./inputValidation.js";
 
 export const addTodo = (text) => {
@@ -12,6 +12,7 @@ export const addTodo = (text) => {
     const taskMarkup = Task(taskObj);
     //store the task
     TodoItems.push(taskObj);
+    storeTodo(TodoItems);
     //render the task on html dom
     document.getElementById("todo-list").appendChild(taskMarkup);
   }

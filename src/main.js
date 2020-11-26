@@ -5,8 +5,10 @@
 
 import { formSubmission } from "./helper/formSubmission.js";
 import { deleteCheck } from "./helper/deleteCheck.js";
+import { TodoItems, storeTodo } from "./taskData.js";
 
 window.onload = () => {
   document.forms.taskList.addEventListener("submit", formSubmission);
   document.getElementById("todo-list").addEventListener("click", deleteCheck);
+  storeTodo(TodoItems);
 };
