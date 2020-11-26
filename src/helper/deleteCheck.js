@@ -1,3 +1,5 @@
+import { deleteTodoStorage } from "./deleteTodoStorage.js";
+
 export const deleteCheck = (event) => {
   const item = event.target;
   if (item.classList[0] === "trash-btn") {
@@ -6,6 +8,7 @@ export const deleteCheck = (event) => {
     todo.classList.add("fall");
     todo.addEventListener("transitionend", () => {
       todo.remove();
+      deleteTodoStorage(todo.id);
     });
   }
 
