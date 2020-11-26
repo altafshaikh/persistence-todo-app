@@ -5,9 +5,9 @@ export const Task = (taskObj) => {
   if (taskObj.completed) {
     div.classList.add("completed");
   }
-  const li = document.createElement("li");
-  li.classList.add("todo-item");
-  li.textContent = taskObj.description;
+  const p = document.createElement("p");
+  p.classList.add("todo-item");
+  p.textContent = taskObj.description;
 
   const completeBtn = document.createElement("button");
   completeBtn.classList.add("complete-btn");
@@ -17,7 +17,7 @@ export const Task = (taskObj) => {
   delBtn.classList.add("trash-btn");
   delBtn.innerHTML = "<i class='fa fa-trash'></i>";
 
-  div.appendChild(li);
+  div.appendChild(p);
   div.appendChild(completeBtn);
   div.appendChild(delBtn);
 

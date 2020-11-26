@@ -16,5 +16,13 @@ export const isContainTags = (str) => {
   return true;
 };
 
+export const maxCharInput = (str) => {
+  if (str.length > 20) {
+    return false;
+  }
+  return true;
+};
+
 Validators.push(isEmpty);
 Validators.push(isContainTags);
+Validators.push(maxCharInput);
