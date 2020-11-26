@@ -10,10 +10,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header h1 {
+.logo {
+  height: 50px;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.navigation {
+  background-color: transparent;
+  display: flex;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.headiing {
   text-align: center;
 }
-header,
+.headiing,
 form {
   min-height: 20vh;
   display: flex;
@@ -140,6 +154,12 @@ select {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .navigation {
+    justify-content: center;
+  }
+  .logo {
+    margin: 10px 0;
+  }
   form input,
   form button {
     font-size: 5vw !important;
