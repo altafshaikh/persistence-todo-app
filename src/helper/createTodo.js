@@ -10,8 +10,13 @@ export const createTodo = (text) => {
     const todoObj = new taskConstructor(text);
     renderTodo(todoObj);
     //store the task
-    const StoredTodos = getStoredTodo();
-    StoredTodos.push(todoObj);
-    storeTodo(StoredTodos);
+    try {
+      const StoredTodos = getStoredTodo();
+      StoredTodos.push(todoObj);
+      storeTodo(StoredTodos);
+    } catch (error) {
+      console.log("Check Your Local Storage");
+      throw new Error("Issue with Browser Local storage");
+    }
   }
 };

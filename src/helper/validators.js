@@ -2,12 +2,11 @@ export const Validators = [];
 
 export const isEmpty = (str) => {
   if (str == "" || str == "undefined") {
+    //string is empty validation should fail
     return false;
   }
   return true;
 };
-
-window.isEmpty = isEmpty;
 
 export const isContainTags = (str) => {
   if (str.includes("<")) {
