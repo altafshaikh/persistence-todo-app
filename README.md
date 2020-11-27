@@ -26,6 +26,7 @@ You need to have a basic knowledge of HTML, CSS and JavaScript, variables, array
 
 ## Sample Working
 
+![todo-app](https://github.com/ialtafshaikh/static-files/raw/master/gifs/todo-app-demo.gif)
 
 ### Downloading and Running this Project Locally
 1. clone the repository using below command
