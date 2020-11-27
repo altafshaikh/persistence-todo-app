@@ -3,10 +3,12 @@ import { storeTodo, getStoredTodo } from "../taskData.js";
 
 export const deleteCheck = (event) => {
   const item = event.target;
+
+  //delete todo from storage and remove from dom
   if (item.classList[0] === "trash-btn") {
     const todo = item.parentElement;
     const id = todo.id;
-    //animation
+    //fall animation
     todo.classList.add("fall");
     todo.addEventListener("transitionend", () => {
       todo.remove();
@@ -14,6 +16,7 @@ export const deleteCheck = (event) => {
     deleteTodoStorage(id);
   }
 
+  //mark check and update the todo in the storage
   if (item.classList[0] === "complete-btn") {
     const todo = item.parentElement;
 
