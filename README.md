@@ -47,6 +47,10 @@ To Host the Project I had used Github Pages. To learn more [visit her](https://t
 - [Buildinga persistance to do app](https://freshman.tech/todo-list)
 - [user input validation and sanitizing user input](https://linguinecode.com/post/validate-sanitize-user-input-javascript)
 - [JS Event Listener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener)
+- [browser local Strorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [css transition](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+- [JS Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+- [JS Dom Manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
 
 ## Author
 
