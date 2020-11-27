@@ -1,8 +1,3 @@
-// https://freshman.tech/todo-list/
-// https://linguinecode.com/post/validate-sanitize-user-input-javascript
-
-/* <script>alert(document.cookie)</script> */
-
 import { formSubmission } from "./helper/formSubmission.js";
 import { deleteCheck } from "./helper/deleteCheck.js";
 import { storeTodo, getStoredTodo } from "./taskData.js";
@@ -15,6 +10,7 @@ window.onload = () => {
   document.getElementById("todo-filter").addEventListener("change", filterTodo);
 };
 
+//onRefresh => check if todos are present or not
 document.addEventListener("DOMContentLoaded", () => {
   const todos = getStoredTodo();
   if (todos) {
