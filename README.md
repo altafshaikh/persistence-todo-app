@@ -41,7 +41,7 @@ To Host the Project I had used Github Pages. To learn more [visit her](https://t
 
 ## Live Demo of this Project
 
-[Live Working](https://github.com/ialtafshaikh/todo-app)
+[Live Working](https://ialtafshaikh.github.io/todo-app/)
 
 ## References
 - [Buildinga persistance to do app](https://freshman.tech/todo-list)
