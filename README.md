@@ -31,7 +31,7 @@ You need to have a basic knowledge of HTML, CSS and JavaScript, variables, array
 ### Downloading and Running this Project Locally
 1. clone the repository using below command
 ```
-git clone https://github.com/ialtafshaikh/todo-app.git
+git clone https://github.com/altafshaikh/persistence-todo-app.git
 ```
 2. And run the index.html using Live server
 
@@ -54,7 +54,7 @@ To Host the Project I had used Github Pages. To learn more [visit her](https://t
 
 ## Author
 
-* **Altaf Shaikh** - *work by* - [ialtafshaikh](https://github.com/ialtafshaikh)
+* **Altaf Shaikh** - *work by* - [altafshaikh](https://github.com/altafshaikh)
 
 ![altaf shaikh](https://raw.githubusercontent.com/ialtafshaikh/static-files/master/coollogo_com-327551664.png)
 
